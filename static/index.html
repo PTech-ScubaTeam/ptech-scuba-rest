@@ -1,24 +1,102 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <title>Python Flask Starter Application</title>
     <meta charset="utf-8">
+    <title>P-TECH 2015 | Summer Program</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/stylesheets/style.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="static/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="static/stylesheets/basic.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="static/images/newapp-icon.png">
-        <td>
-            <h1>Hi there!</h1>
-          <p>Thanks for creating a
-            <span class = "blue">Python <a href = "http://flask.pocoo.org/">Flask</a> Starter Application</span>.
-    </table>
-  </body>
+  <body role="document">
 
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">P-TECH Scuba Team</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="terms">Technical Terms</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Welcome to IBM!</h1>
+        <p>This website will be used as both a teaching/learning tool and the launchpoint for your internship.  The six weeks will encompass several topics and themes.</p>
+
+      </div>
+
+  <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Hands-On IoT Project</h2>
+          <p>Using Arduino Unos and cheap temperature/light sensors each of us will build a sensor and have the data sent to IBM's BlueMix IoT foundation.  The data will be stored in a database (mongoDB) and then we will collectively build a web site to show the data. (Working Independently or the entire Group).  See the working <a href="iot.html">Demo</a></p>
+
+        </div>
+        <div class="col-md-4">
+          <h2>IBM CAMSS Strategy Deep Dives</h2>
+          <p>Working in teams of two you will take a deep dive into one of IBM's CAMSS areas.  Click on a link to goto the IBM ThinkAcademy to learn about IBM's POV on each topic.</p>
+          <ul>
+            <li><a href="https://w3.ibm.com/ibm/thinkacademy/index.html?#/cloud/cloud_index">Cloud</a></li>
+            <li><a href="https://w3.ibm.com/ibm/thinkacademy/index.html?#/bigdata/bigdata_index">Analytics</a></li>
+            <li><a href="https://w3.ibm.com/ibm/thinkacademy/index.html?#/mobile/mobile_index">Mobile</a></li>
+            <li><a href="https://w3.ibm.com/ibm/thinkacademy/index.html?#/social/social_index">Social</a></li>
+            <li><a href="https://w3.ibm.com/ibm/thinkacademy/index.html?#/security/security_index">Security</a></li>
+          </ul>
+       </div>
+        <div class="col-md-4">
+          <h2>Miscellaneous</h2>
+          <p>Getting us all ready for the workplace through activities such as: shadowing, <a href="contacts.html">guest speakers</a>, presenting, brainstorming / development sessions, etc.  Hopefully we'll have a few fun trips outside of IBM as well.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+         <p>&copy; International Business Machines 2017</p>
+       </footer>
+    </div> <!-- /container -->
+
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
+
+  </body>
 </html>

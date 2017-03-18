@@ -1,0 +1,124 @@
+[
+	{ 
+	  "abbr" : "Ethernet",
+	  "term" : "Ethernet",
+	  "def"  : "The standard way to connect computers on a network over a wired connection. It provides a simple interface and for connecting multiple devices, such computers, routers, and switches. With a single router and a few Ethernet cables, you can create a LAN, which allows all connected devices to communicate with each other."
+	},
+	{
+	  "abbr" : "Internet",
+	  "term" : "Internet",
+	  "def"  : "the Internet was created way back in 1969, during the Cold War, by the United States military. It was meant to be a -nuke-proof- communications network. Today, the Internet spreads across the globe and consists of countless networks and computers, allowing millions of people to share information. Data that travels long distances on the Internet is transferred on huge lines known collectively as the Internet backbone. The Internet is now maintained by the major Internet service providers such as MCI Worldcom, Sprint, GTE, ANS, and UUNET. Because these providers make huge amounts of revenue off the Internet, they are motivated to maintain consistent and fast connections which benefits everyday Internet users"
+	},
+	{
+	  "abbr" : "intranet",
+	  "term" : "Intranet",
+	  "def"  : "an Intranet is an internal or private network that can only be accessed within the confines of a company, university, or organization. "
+	},
+	{ "abbr" : "ip",
+	  "term" : "Internet Protocol",
+	  "def"	 : "A set of rules governing the format of data sent over the Internet or other network."
+	},
+	{
+	  "abbr" : "TCP/IP",
+	  "term" : "Transmission Control Protocol / Internet Protocol",
+	  "def"  : "These two protocols were developed in the early days of the Internet by the U.S. military. The purpose was to allow computers to communicate over long distance networks. The TCP part has to do with the verifying delivery of the packets. The IP part refers to the moving of data packets between nodes. TCP/IP has since then become the foundation of the Internet. Therefore, TCP/IP software is built into all major operating systems, such as Unix, Windows, and the Mac OS."
+	},
+	{ "abbr" : "ip addr",
+	  "term" : "IP Address",
+	  "def"  : "a unique string of numbers separated by periods that identifies each computer using the Internet Protocol to communicate over a network (eg, 9.2.122.122, 169.122.122.3)"
+	},
+	{
+	  "abbr" : "MAC Address",
+	  "term" : "Media Access Control Address",
+	  "def"  : "A MAC address is a hardware identification number that uniquely identifies each device on a network. The MAC address is manufactured into every network card, such as an Ethernet card or Wi-Fi card, and therefore cannot be changed. Because there are millions of networkable devices in existence, and each device needs to have a unique MAC address, there must be a very wide range of possible addresses. For this reason, MAC addresses are made up of six two-digit hexadecimal numbers, separated by colons. For example, an Ethernet card may have a MAC address of 00:0d:83:b1:c0:8e. Fortunately, you do not need to know this address, since it is automatically recognized by most networks."
+	},
+	{ "abbr" : "dns",
+	  "term" : "Domain Name Service",
+	  "def"	 : "Short for Domain Name System (or Service or Server), an Internet service that translates domain names into IP addresses."
+	},
+	{ "abbr" : "http",
+	  "term" : "HyperText Transfer Protocol",
+	  "def"	 : "The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web."
+	},
+	{ 
+	  "abbr" : "SSL",
+	  "term" : "Secure Sockets Layer",
+	  "def"  : " SSL is a secure protocol developed for sending information securely over the Internet. Many websites use SSL for secure areas of their sites, such as user account pages and online checkout."
+	},
+	{ 
+	  "abbr" : "https",
+	  "term" : "HyperText Transfer Protocol Secure",
+	  "def"  : "HTTPS is the same thing as HTTP, but uses a secure socket layer (SSL) for security purposes. Some examples of sites that use HTTPS include banking and investment websites, e-commerce websites, and most websites that require you to log in."
+	},
+	{ 
+	  "abbr" : "DOM",
+	  "term" : "Document Object Model",
+	  "def"  : "The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents. The nodes of every document are organized in a tree structure, called the DOM tree."
+	},
+	{ 
+	  "abbr" : "UA",
+	  "term" : "User-Agent",
+	  "def"  : "A user agent is any software that retrieves, renders and facilitates end user interaction with Web content, or whose user interface is implemented using Web technologies.  Examples include Browsers such as IE, FireFox, Chrome, and mobile devices like an iPhone."
+	},
+	{ 
+	  "abbr" : "HTML",
+	  "term" : "HyperText Markup Language",
+	  "def"  : "HTML is the language used to create webpages. Hypertext refers to the hyperlinks that an HTML page may contain. Markup language- refers to the way tags are used to define the page layout and elements within the page."
+	},
+	{ 
+	  "abbr" : "www",
+	  "term" : "World Wide Web",
+	  "def"  : " It is important to know that this is not a synonym for the Internet. The World Wide Web is a subset of the Internet. The Web consists of pages that can be accessed using a Web browser. The Internet is the actual network of networks where all the information resides. Things like Telnet, FTP, Internet gaming, Internet Relay Chat (IRC), and e-mail are all part of the Internet, but are not part of the World Wide Web. The Hyper-Text Transfer Protocol (HTTP) is the method used to transfer Web pages to your computer. With hypertext, a word or phrase can contain a link to another Web site. All Web pages are written in the hyper-text markup language (HTML), which works in conjunction with HTTP."
+	},
+	{ 
+	  "abbr" : "CSS",
+	  "term" : "Cascading Style Sheets",
+	  "def"  : "Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.  CSS helps Web developers create a uniform look across several pages of a Web site."
+	},
+	{ 
+	  "abbr" : "JavaScript",
+	  "term" : "JavaScript",
+	  "def"  : "JavaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to add dynamic and interactive elements to websites. While JavaScript is influenced by Java, the syntax is more similar to C and is based on ECMAScript, a scripting language developed by Sun Microsystems.  JavaScript is a client-side scripting language, which means the source code is processed by the client's web browser rather than on the web server."
+	},
+	{ 
+	  "abbr" : "API",
+	  "term" : "Application Programming Interface",
+	  "def"  : "An API is a set of commands, functions, and protocols which programmers can use when building software for a specific operating system. The API allows programmers to use predefined functions to interact with the operating system, instead of writing them from scratch."
+	},
+	{ 
+	  "abbr" : "JSON",
+	  "term" : "JavaScript Object Notation",
+	  "def"  : "(Pronounced: Jason) JSON is a text-based data interchange format designed for transmitting structured data. It is most commonly used for transferring data between web applications and web servers."
+	},
+	{ 
+	  "abbr" : "Cloud Computing",
+	  "term" : "Cloud Computing",
+	  "def"  : "Cloud computing refers to applications and services offered over the Internet. These services are offered from data centers all over the world, which collectively are referred to as the cloud. This metaphor represents the intangible, yet universal nature of the Internet."
+	},
+	{ 
+	  "abbr" : "Ajax",
+	  "term" : "Asynchronous JavaScript And XML",
+	  "def"  : "Ajax is a combination of Web development technologies used for creating dynamic websites. While the term 'Ajax' is not written in all caps like most tech acronyms, the letters stand for Asynchronous JavaScript And XML. Therefore, websites that use Ajax combine JavaScript and XML to display dynamic content.  The 'asynchronous' part of Ajax refers to the way requests are made to the Web server. When a script sends a request to the Web server, it may receive data, which can then be displayed on the Web page. Since these events happen at slightly different times, they are considered to be asynchronous. Most Ajax implementations use the XMLHttpRequest API, which includes a list of server requests that can be called within JavaScript code. The data is usually sent back to the browser in an XML format, since it is easy to parse. However, it is possible for the server to send data as unformatted plain text as well."
+	},
+	{ 
+	  "abbr" : "Agile",
+	  "term" : "Agile Methodology",
+	  "def"  : "Agile software development is a group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages rapid and flexible response to change."
+	},
+	{
+	  "abbr" : "IoT",
+	  "term" : "Internet of Things",
+	  "def"  : "An umbrella term that refers to anything connected to the Internet. It includes traditional computing devices, such as laptops, tablets, and smartphones, but also includes a growing list of other devices that have recently become Internet enabled. Examples include home appliances, automobiles, wearable electronics, security cameras, and many other things.  In order for a device to be part of the Internet of Things, it must be able to communicate with other devices. Therefore, it requires some type of built-in wired or wireless communication. Most IoT devices are Wi-Fi enabled, but Bluetooth can also be used to transfer data to nearby devices. Anything that connects directly to the Internet must have a unique IP address, which is one of the reasons the adoption of IPv6 has been so important."
+	},
+	{
+	  "abbr" : "SQL",
+	  "term" : "Structured Query Language",
+	  "def"  : "It is a query language used for accessing and modifying information in a database. Some common SQL commands include insert, update, and delete. The language was first created by IBM in 1975 and was called SEQUEL for Structured English Query Language. Since then, it has undergone a number of changes, many coming from Oracle products. (eg, SELECT * FROM SYSCAT.TABLES WHERE TABSCHEMA <> 'SYSIBM')"
+	},
+	{
+	  "abbr" : "URL or URI",
+	  "term" : "Uniform Resource Locator or Uniform Resource Identifier",	
+	  "def"  : " A URL is the address of a specific Web site or file on the Internet. It cannot have spaces or certain other characters and uses forward slashes to denote different directories. Some examples of URLs are http://www.cnet.com/, http://web.mit.edu/, and ftp://info.apple.com/. As you can see, not all URLs begin with 'http'. The first part of a URL indicates what kind of resource it is addressing."
+	}
+
+]

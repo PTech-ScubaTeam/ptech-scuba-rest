@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>P-TECH 2015 | Internet Terms</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="static/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="static/stylesheets/basic.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">P-TECH Scuba Team</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="terms">Technical Terms</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div id="terms">
+        <h1>Welcome!</h1>
+        <p></p>
+      </div>
+        <p><button id="btnReveal" type="button" class="btn btn-lg btn-warning">Reveal</button> <button id="btnPrevTerm" class="btn btn-primary btn-lg">&laquo; Previous Term</button> <button id="btnNextTerm" class="btn btn-primary btn-lg">Next Term &raquo;</button>
+      </div>
+
+
+
+       <footer>
+        <p>&copy; International Business Machines 2017</p>
+      </footer>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+  var idx = 0;
+  var terms=[];
+  var term;
+
+  function showTerm() {
+
+      idx = ( idx > 0 ? idx % terms.length : 0);
+
+      term = terms[idx];
+
+      $('#terms').html( '<h1>' + term.abbr + '</h1><h3>' + term.term + '</h3><p>' + term.def + '</p>');
+
+       // if ( idx == terms.length - 1  ) {
+       //   idx = 0;
+       // } else {
+          idx++;
+       // }
+
+
+        $('#btnReveal').html( 'Reveal');
+  }
+
+  function showPreviousTerm() {
+
+    if ( idx > 0 ) {
+       idx-=2;
+    }
+
+    showTerm();
+  }
+
+  function reveal() {
+    $('#terms h3').toggle('slow');
+    $('#terms p').toggle(3000);
+
+    if ( $('#btnReveal').html() == 'Hide') {
+      $('#btnReveal').html( 'Show');
+    } else {
+      $('#btnReveal').html( 'Hide');
+    }
+  }
+
+  $(document).ready( function() {
+
+    $.getJSON( "static/data/terms.json", function( data ) {
+      terms = data;
+      showTerm();
+
+    });
+
+    $('#btnNextTerm').click( showTerm);
+    $('#btnPrevTerm').click( showPreviousTerm);
+    $('#btnReveal').click( reveal );
+  });
+
+  </script>
+  </body>
+</html>
