@@ -21,6 +21,10 @@ app = Flask(__name__)
 def Welcome():
     return app.send_static_file('index.html')
 
+@app.route('/IBMDomainVerification.html')
+def asoc():
+    return app.send_static_file('IBMDomainVerification.html')
+
 @app.route('/terms')
 def terms():
     return app.send_static_file('terms.html')
