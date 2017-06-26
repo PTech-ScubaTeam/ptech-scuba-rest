@@ -13,9 +13,16 @@
 # limitations under the License.
 
 import os
-from flask import Flask, jsonify
+from flask import Flask, jsonify, Response, render_template, make_response
+from flask_talisman import Talisman
 
 app = Flask(__name__)
+talisman = Talisman(app)
+
+@app.after_request
+def apply_server(response):
+	response.headers['Server'] = 'PTECH Server'
+	return response
 
 @app.route('/')
 def Welcome():
